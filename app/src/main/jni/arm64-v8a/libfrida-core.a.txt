@@ -1,0 +1,2 @@
+this file used to be libfrida-core.a removed to save storage
+see https://frida.re/ and https://github.com/frida/frida-core

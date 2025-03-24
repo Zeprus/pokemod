@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".MainActivity"
+    android:layout_gravity="center"
+    android:orientation="vertical"
+    android:layout_margin="5dp">
+
+    <TextView
+        android:id="@+id/version_display"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/pokemon_go_not_found"
+        android:padding="10dp"
+        android:textSize="20sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_margin="5dp"
+        android:elevation="5dp"
+        android:background="@drawable/rounded_background"
+        tools:targetApi="lollipop">
+
+        <Switch
+            android:id="@+id/switchService"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:paddingStart="50dp"
+            android:paddingEnd="50dp"
+            android:text="@string/service"
+            android:textAppearance="@style/TextAppearance.AppCompat.Widget.Switch"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonAttach"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_rounded"
+            android:onClick="attach"
+            android:text="@string/attach"
+            android:textAppearance="@style/TextAppearance.AppCompat.Outline"
+            android:textSize="20sp" />
+
+        <Button
+            android:id="@+id/buttonCleanup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:background="@drawable/button_rounded"
+            android:onClick="performCleanup"
+            android:text="@string/force_cleanup"
+            android:textAppearance="@style/TextAppearance.AppCompat.Outline"
+            android:textSize="20sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_vertical|end"
+        android:layout_margin="5dp"
+        android:background="@drawable/rounded_background"
+        android:elevation="5dp"
+        android:gravity="fill_vertical|end"
+        android:orientation="vertical"
+        tools:targetApi="lollipop">
+
+        <TextView
+            android:id="@+id/warning"
+            android:layout_width="match_parent"
+            android:layout_height="96dp"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/service_warning"
+            android:textColor="#C62828"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/credits"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="@string/credits"
+            android:textColor="#E91E63" />
+    </LinearLayout>
+
+
+</LinearLayout>

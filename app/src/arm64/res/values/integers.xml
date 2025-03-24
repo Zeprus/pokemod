@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="get_encounter_stats">4992</integer>
+    <integer name="get_inventory_stats">1771</integer>
+    <integer name="get_raid_stats">2702</integer>
+    <integer name="fast_encounter">2576</integer>
+    <integer name="keep_encounter_ui">407</integer>
+    <integer name="masstransfer">307</integer>
+    <integer name="perfected_throw">2070</integer>
+    <integer name="fast_powerup">1567</integer>
+    <integer name="ivnames">1587</integer>
+    <integer name="nameplateiv">4412</integer>
+    <integer name="skip_encounter_intro">1356</integer>
+</resources>

@@ -1,0 +1,2 @@
+This used to contain Unity-Dumps of Pokemon GO to obtain adress-offsets.
+See https://github.com/Perfare/Il2CppDumper or any similar dumper

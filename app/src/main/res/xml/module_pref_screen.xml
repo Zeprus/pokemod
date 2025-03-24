@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android">
+        <ListPreference
+            android:defaultValue="Toast"
+            android:entries="@array/popup_types"
+            android:entryValues="@array/popup_types"
+            android:key="popup_type"
+            android:title="IV Display Format" />
+        <ListPreference
+            android:defaultValue="minimal"
+            android:entries="@array/info_types"
+            android:entryValues="@array/info_types"
+            android:key="info_type"
+            android:title="IV Display Information" />
+        <ListPreference
+            android:defaultValue="bottom"
+            android:dependency="popup_type"
+            android:entries="@array/toast_location"
+            android:entryValues="@array/toast_location"
+            android:key="toast_location"
+            android:title="Toast Location" />
+    <EditTextPreference
+        android:height="@dimen/nav_header_vertical_spacing"
+        android:clickable="false"
+        android:clipToPadding="true"
+        android:divider="?attr/dividerHorizontal"
+        android:enabled="false"
+        android:padding="0sp"
+        android:paddingTop="0dp"
+        android:paddingBottom="0dp"
+        android:showDividers="beginning"
+        android:summary="If Auto-Launch isn't working, try selecting the option below and clicking the Inject button right at the splash screen."
+        android:textAlignment="center"
+        android:textStyle="normal|bold|italic"
+        android:title="Use below setting only if automatic fails" />
+        <SwitchPreference
+            android:defaultValue="false"
+            android:key="manualInject"
+            android:title="Inject manually" />
+</PreferenceScreen>

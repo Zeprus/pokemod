@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="popup_types">
+        <item>Toast</item>
+        <item>Notification</item>
+    </string-array>
+    <string-array name="info_types">
+        <item>minimal</item>
+        <item>verbose</item>
+    </string-array>
+    <string-array name="toast_location">
+        <item>top</item>
+        <item>center</item>
+        <item>bottom</item>
+    </string-array>
+</resources>
